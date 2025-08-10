@@ -2,6 +2,7 @@
   "name": "layer-caker",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/cli": "^4.3.0",
     "@sanity/icons": "^3.7.4",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^4.3.0",
@@ -16,6 +18,7 @@
     "next-sanity": "^10.0.10",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-refractor": "^3.0.0",
     "sanity": "^4.3.0",
     "styled-components": "^6.1.19"
   },
@@ -29,8 +32,5 @@
     "eslint-config-next": "15.4.6",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "overrides": {
-    "minimatch": "10.0.1"
   }
 }
