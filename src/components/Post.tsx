@@ -1,5 +1,5 @@
-import { Author } from './author';
 import { Categories } from '@/components/Categories';
+// import { Author } from '@components/Author';
 import { components } from '@/sanity/portableTextComponents';
 import { PortableText } from 'next-sanity';
 import { POST_QUERYResult } from '@/sanity/types';
@@ -19,7 +19,7 @@ export function Post(props: NonNullable<POST_QUERYResult>) {
           <PublishedAt publishedAt={publishedAt} />
         </div>
         <Title>{title}</Title>
-        <Author author={author} />
+        {/* <Author author={author} /> */}
       </header>
       {mainImage ? (
         <figure className='lg:col-span-4 flex flex-col gap-2 items-start'>
